@@ -1,0 +1,156 @@
+@import url(Reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Oxanium:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --corRosa: #ed145b;
+  --corAzul: #27ceb4;
+  --corPreta: #171717;
+  --white: white;
+  --font: 'Major Mono Display';
+  --fontText: 'Poppins';
+  --fontDisplay: 'Oxanium';
+}
+
+body {
+  background-color: var(--corPreta);
+  color: var(--white);
+  font: 400 1rem var(--fontText);
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+strong {
+  color: var(--corAzul);
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 2rem;
+}
+
+.header {
+  font: 700 2rem var(--font);
+  text-align: center;
+}
+
+span {
+  color: var(--corRosa);
+}
+
+.paragraph,
+.newPW {
+  font: 400 1.5rem var(--fontDisplay);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--corAzul);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--corRosa);
+}
+
+.password {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.time,
+.password {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#inputTime {
+  width: 20%;
+  text-align: center;
+}
+
+.btnTime,
+.btnGenerate {
+  background-color: var(--corRosa);
+  border: 2px solid var(--corAzul);
+  font: 700 1rem var(--fontText);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.btnLogin {
+  background-color: var(--corRosa);
+  border: 2px solid var(--corAzul);
+  padding: 0.8rem;
+  font: 400 1.5rem var(--fontDisplay);
+  color: white;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+#inputTime,
+#inputPW {
+  font: 400 0.6rem var(--fontText-);
+}
+
+#inputTime::placeholder,
+#inputPW::placeholder {
+  text-align: center;
+}
+
+.btnShowPW {
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+img {
+  width: 50%;
+}
+
+.modal {
+  position: absolute;
+  background-color: var(--white);
+  width: 50%;
+  height: 10%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--corAzul);
+  border-radius: 8px;
+  z-index: 5;
+}
+
+.modalHeader {
+  font: 700 1.5rem var(--fontText);
+  color: var(--corPreta);
+}
+
+.filter {
+  width: 1000%;
+  height: 1000%;
+  position: absolute;
+  filter: blur(80%);
+  background-color: rgba(0, 0, 0, 0.72);
+  z-index: 4;
+}
+
+.hidden {
+  display: none;
+}
